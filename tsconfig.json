@@ -6,14 +6,11 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,
     "allowJs": true,
     "noUnusedLocals": false,
-    "strictNullChecks": false,
-    "ignoreDeprecations": "6.0"
+    "strictNullChecks": false
   }
 }
