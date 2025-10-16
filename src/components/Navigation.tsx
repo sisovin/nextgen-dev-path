@@ -5,6 +5,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const languages = [
+  { name: "Home", path: "/" },
   { name: "Python", path: "/python" },
   { name: "JavaScript", path: "/javascript" },
   { name: "TypeScript", path: "/typescript" },
