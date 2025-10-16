@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { Code2, Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Code2, Github, Twitter, Linkedin, Mail, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const languages = [
+  {name: "Home", path: "/"},
   { name: "Python", path: "/python" },
   { name: "JavaScript", path: "/javascript" },
   { name: "TypeScript", path: "/typescript" },
@@ -18,34 +19,37 @@ const languages = [
 
 export const Footer = () => {
   return (
-    <footer className="border-t bg-card">
+    <footer className="border-t bg-black">
       <div className="container px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Code2 className="h-6 w-6 text-primary" />
-              <span className="font-bold text-lg">Top Languages 2026</span>
+              <span className="font-bold text-lg text-blue-700">Top Languages 2026</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Your comprehensive guide to the top programming languages shaping the future of technology in 2026.
             </p>
             <div className="flex gap-2">
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Github className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="h-9 w-9 bg-gray-800">
+                <Github className="h-4 w-4 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Twitter className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="h-9 w-9 bg-gray-800">
+                <Twitter className="h-4 w-4 text-white" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Linkedin className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="h-9 w-9 bg-gray-800">
+                <Linkedin className="h-4 w-4 text-white" />
+              </Button>
+              <Button variant="ghost" size="icon" className="h-9 w-9 bg-gray-800">
+                <Youtube className="h-4 w-4 text-white" />
               </Button>
             </div>
           </div>
 
           {/* Languages Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold">Languages</h3>
+            <h3 className="font-semibold text-blue-700">Languages</h3>
             <ul className="space-y-2">
               {languages.slice(0, 5).map((lang) => (
                 <li key={lang.path}>
@@ -62,7 +66,7 @@ export const Footer = () => {
 
           {/* More Languages */}
           <div className="space-y-4">
-            <h3 className="font-semibold">More Languages</h3>
+            <h3 className="font-semibold text-blue-700">More Languages</h3>
             <ul className="space-y-2">
               {languages.slice(5).map((lang) => (
                 <li key={lang.path}>
@@ -79,7 +83,7 @@ export const Footer = () => {
 
           {/* Newsletter Section */}
           <div className="space-y-4">
-            <h3 className="font-semibold">Stay Updated</h3>
+            <h3 className="font-semibold text-blue-700">Stay Updated</h3>
             <p className="text-sm text-muted-foreground">
               Get the latest insights on programming languages and career trends.
             </p>
